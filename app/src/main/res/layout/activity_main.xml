@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.ryan.ryanfaizal_1202154188_modul2.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dapurmama2"/>
+
+    <TextView
+        android:id="@+id/pilihmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/pilih_menu"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_weight="1"
+            android:text="@string/take_away"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/radio_dine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pilihmenu"
+            android:layout_alignStart="@+id/pilihmenu"
+            android:layout_below="@+id/pilihmenu"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="@string/dine_in"
+            android:textSize="15sp"
+
+            android:textStyle="italic" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Pesan Sekarang" />
+
+</RelativeLayout>
